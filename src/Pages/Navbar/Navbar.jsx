@@ -37,12 +37,10 @@ const Navbar = () => {
                         <Link href="#home" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
                             Home
                         </Link>
-                        <Link href="#tv" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+                        <Link to={"share-earn"} className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
                             Share & Earn
                         </Link>
-                        <Link href="#movies" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-                            Movies
-                        </Link>
+                        
                         <Link href="#new" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
                             News & Popular
                         </Link>
@@ -89,7 +87,7 @@ const Navbar = () => {
                             Home
                         </Link>
                         <Link 
-                            href="#tv" 
+                            to={"share-earn"}
                             className="text-white hover:bg-gray-800 transition-colors px-6 py-3 text-sm font-medium"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >

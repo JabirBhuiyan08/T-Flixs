@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import one from '../../assets/1.png'
+import two from '../../assets/2.png'
+import three from '../../assets/3.png'
+import four from '../../assets/4.png'
 const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [showPlayModal, setShowPlayModal] = useState(false);
@@ -10,7 +13,7 @@ const HeroSection = () => {
     const carouselItems = [
         {
             id: 1,
-            image: "https://images.unsplash.com/photo-1489599809505-7c8e1c8bfd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            image: one,
             title: "The Grand Adventure",
             description: "Experience the journey of a lifetime"
         },
@@ -25,6 +28,24 @@ const HeroSection = () => {
             image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
             title: "Mystery Unfolds",
             description: "Discover the secrets within"
+        },
+        {
+            id: 4,
+            image: two,
+            title: "Romantic Escapades",
+            description: "Find Me"
+        },
+        {
+            id: 5,
+            image: three,
+            title: "Sci-Fi Wonders",
+            description: "Explore New Worlds"
+        },
+        {
+            id: 6,
+            image: four,
+            title: "Comedy Nights",
+            description: "Extrime"
         }
     ];
 
@@ -86,7 +107,7 @@ const HeroSection = () => {
                 {carouselItems.map((item, index) => (
                     <div
                         key={item.id}
-                        className={`absolute inset-0 transition-opacity duration-500 ${
+                        className={`absolute inset-0 transition-opacity duration-100 ${
                             index === currentSlide ? 'opacity-100' : 'opacity-0'
                         }`}
                     >
