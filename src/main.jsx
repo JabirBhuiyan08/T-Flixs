@@ -12,11 +12,11 @@ const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <AuthProvider> */}
-      <QueryClientProvider client={queryClient}>
-        <div className="full-screen">
-          <RouterProvider router={router} />
-        </div>
-      </QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <div className="h-screen w-full bg-black text-white overflow-auto">
+        <RouterProvider router={router} />
+      </div>
+    </QueryClientProvider>
     {/* </AuthProvider> */}
   </React.StrictMode>
 );
